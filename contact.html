@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url(bg/quad-bg.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header {
+            background: url('images/ursm1.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .lesson-content {
+            margin-top: 10px;
+            padding: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border: 2px solid #004080;
+            border-radius: 15px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.7rem;
+            width: 100%;
+            background:#064b90;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: inset 0 0 60px rgba(30, 60, 180, 0.25),
+                        0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 12px 12px;
+            margin-top: 3px;
+            position: sticky;
+            z-index: 999;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: #3498db;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(30, 60, 180, 0.5);
+        }
+
+
+        main {
+            padding: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 20px;
+        }
+        
+        .contact-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #3498db;
+            margin-top: 0.2rem;
+        }
+        
+        .contact-text h3 {
+            margin-bottom: 0.3rem;
+            color: #1c4670;
+        }
+        
+        .contact-text p, .contact-text a {
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        .contact-text a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        
+        .about-us{
+            animation: colorFade 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes colorFade {
+            from {
+                color: darkblue;
+            }
+            to {
+                color: rgb(39, 115, 255);
+            }
+        }
+    </style>
+ </head>
+<body>
+        <header>
+            <div id="lessons" class="lesson-content">
+                <h1>University of Rizal System - Morong Campus</h1>
+                <p>Nurturing Tomorrow's Noblest</p>
+            </div>
+        </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="home.html#about">About Us</a>
+        <a href="administrators.html">Administrators</a>
+        <a href="org-structure.html">Organizational Structure</a>
+        <a href="departments.html">Departments</a>
+        <a href="archives.html">Archives</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    
+    <main>
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2 class="about-us">Contact Us</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>
+                                 &ensp;Sumulong St. Brgy. San Juan, Morong, Rizal
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email Us</h3> 
+                            <p>
+                                Office of the President: <a href="mailto:urs.opmorong@urs.edu.ph, urs.opmorong@gmail.com"><strong> urs.opmorong@urs.edu.ph, urs.opmorong@gmail.com</strong></a><br>
+                                Office of the Campus Director:<a href="mailto:dirmorong@urs.edu.ph"><strong> dirmorong@urs.edu.ph</strong></a><br>
+                                Registrar’s Office:<a href="mailto:morong.registrar@urs.edu.ph"><strong> morong.registrar@urs.edu.ph</strong></a><br>
+                                College of Education:<a href="mailto:coedeanm@urs.edu.ph"><strong> coedeanm@urs.edu.ph</strong></a><br>
+                                College of Science:<a href="mailto:deancosm@urs.edu.ph"><strong> deancosm@urs.edu.ph</strong></a><br>
+                                College of Industrial Technology:<a href="mailto:citdeanm@urs.edu.ph"><strong> citdeanm@urs.edu.ph</strong></a><br>
+                                College of Engineering:<a href="mailto:coengdeanm@urs.edu.ph "><strong> coengdeanm@urs.edu.ph</strong></a><br>
+                                Human Resource Management Office:<a href="mailto:hrmo.morong@urs.edu.ph"><strong> hrmo.morong@urs.edu.ph</strong></a><br>
+                                Dean's Office Graduate School:<a href="mailto:deangradm@urs.edu.ph"><strong> deangradm@urs.edu.ph</strong></a><br>
+                                Admission Office:<a href="mailto:studentadmission.morong@urs.edu.ph"><strong> studentadmission.morong@urs.edu.ph</strong></a><br>
+                                Dental Services:<a href="mailto:godwin.olivas@urs.edu.ph"><strong> godwin.olivas@urs.edu.ph</strong></a><br>
+                                Health Services:<a href="mailto:healthservices@urs.edu.ph"><strong> healthservices@urs.edu.ph</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Call Us</h3> 
+
+                            <p>
+                                Office of the President: <a href="Tel. No.: (02) 8539-9950 to 56 loc 108"><strong>(02) 8539-9950 to 56 loc 108</strong></a><br>
+                                Office of the Campus Director: <a href="Tel. No.: (02) 8539-9950 to 56 loc 100"><strong>(02) 8539-9950 to 56 loc 100</strong></a><br>
+                                College of Education: <a href="Tel. No.: (02) 8539-9950 to 56 loc 104"><strong>(02) 8539-9950 to to 56 loc 104</strong></a><br>
+                                College of Science: <a href="Tel. No.: (02) 8539-9950 to 56 loc 107"><strong>(02) 8539-9950 to 56 loc 107</strong></a><br>
+                                College of Industrial Technology: <a href="Tel. No.: (02) 8539-9950 to 56 loc 105"><strong>(02) 8539-9950 to 56 loc 105</strong></a><br>
+                                College of Engineering: <a href="Tel. No.: (02) 8539-9950 to 56 loc 106"><strong>(02) 8539-9950 to 56 loc 106</strong></a><br>
+                                Human Resource Management Office: <a href="Tel. No.: (02) 8539-9950 to 56 loc 104"><strong>(02) 8539-9950 to 56 loc 106</strong></a><br>
+                                Admission Office: <a href="Tel. No.: (02) 8539-9950 to 56 loc 129"><strong>(02) 8539-9950 to 56 loc 129</strong></a><br>
+                                Dental Services: <a href="Tel. No.: (02) 8539-9950 to 56 loc 131"><strong>(02) 8539-9950 to 56 loc 131</strong></a><br>
+                                Health Services: <a href="Tel. No.: (02) 8539-9950 to 56 loc 131"><strong>(02) 8539-9950 to 56 loc 131</strong></a><br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Office Hours</h3>
+                            <p>
+                                Monday-Friday: <strong>8:00 AM - 5:00 PM</strong><br>
+                                Saturday: <strong>Closed</strong><br>
+                                Sunday: <strong>Closed</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 University of Rizal System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

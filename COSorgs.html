@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URS | Departments</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f9;
+      color: #333;
+      background-image: url(bg/quad-bg.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+            background: url('images/ursm1.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .lesson-content {
+            margin-top: 10px;
+            padding: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border: 2px solid #004080;
+            border-radius: 15px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    .lesson-content-dept {
+    margin-top: 10px;
+    width: 95%;                
+    padding: 40px 80px;        
+    border: 3px solid #004080; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4); 
+    font-size: 1.4rem;
+    text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+        width: 100%;
+        background:#064b90;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: inset 0 0 60px rgba(30, 60, 180, 0.25),
+                    0 8px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 12px 12px;
+        margin-top: 3px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        margin: 0 0.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        background: #3498db;
+        color: #fff;
+        box-shadow: 0 0 10px rgba(30, 60, 180, 0.5);
+    }
+
+    main {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+        
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .org-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            min-width: 320px; 
+            margin-bottom: 10px;
+        }
+        
+        .org-image {
+            flex: 0 0 40%;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #cbd4e7b7;
+        }
+        
+        .org-image img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+        }
+        
+        .org-info {
+            flex: 1;
+            padding: 30px;
+            min-width: 0;
+        }
+        
+        .org-info h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-left: 20px;
+            text-align: center;
+        }
+        
+        .org-info p {
+            color: #000000;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 17px;
+            margin-left: 20px;
+            margin-right: 50px;
+        }
+        
+        .org-details {
+            margin-top: 20px;
+        }
+        
+        .detail-item {
+            margin-bottom: 8px;
+            font-size: 14px;
+            display: flex;
+        }
+        
+        .detail-item strong {
+            color: #2c3e50;
+            min-width: 100px;
+            display: inline-block;
+        } 
+
+    footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+    @media (max-width: 600px) {
+      .info-button {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+    }
+
+    .button-container {
+            text-align: center;
+            margin-top: 50px; 
+        }
+
+        .button1 {
+            background-color: lightblue;
+            color: rgb(2, 2, 2);
+            padding: 12px 24px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgb(71, 139, 255);
+            color: #fff;
+        }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div id="lessons" class="lesson-content">
+            <h1>University of Rizal System - Morong Campus</h1>
+            <p>Nurturing Tomorrow's Noblest</p>
+        </div>
+    </header>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="home.html#about">About Us</a>
+    <a href="administrators.html">The Administrators</a>
+    <a href="org-structure.html">Organizational Structure</a>
+    <a href="departments.html" class="active">Departments</a>
+    <a href="archives.html">Archives</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h2>Student Organizations</h2>
+  </main>
+
+  <div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\TIPA.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Technology Innovators through Programming and Algorithm Sciences (TIPA)</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;Technology Innovators through Programming and Algorithm Sciences (T.I.P.A.) is a dynamic student organization at the University of Rizal System (URS) Morong Campus, operating under the College of Science. Managed by Computer Science students, T.I.P.A. is dedicated to fostering innovation, technical proficiency, and collaborative learning in the fields of programming and algorithm development. <br>
+            &ensp;&ensp;&ensp;&ensp;The organization serves as a platform for aspiring developers and tech enthusiasts to enhance their skills through various activities, including coding workshops, algorithm challenges, and collaborative projects. By promoting a culture of continuous learning and innovation, T.I.P.A. plays a vital role in preparing its members for the evolving demands of the tech industry.</p>
+        </div>
+     </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\COSSB.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>College of Science Student Body (COSSB)</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The College of Science Student Body (COSSB) at the University of Rizal System (URS) Morong Campus is the official student organization representing the College of Science. Its primary purpose is to advocate for the academic and extracurricular interests of science students, foster leadership development, and promote community engagement. <br>
+            &ensp;&ensp;&ensp;&ensp;COSSB organizes various initiatives, including educational programs, outreach activities, and student support services, aiming to enhance the holistic development of its members. By serving as a bridge between the student body and the college administration, COSSB ensures that student concerns are addressed and that opportunities for growth and collaboration are accessible to all science students.</p>
+        </div>
+     </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\COSAA.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>College of Science Athletic Association (COSAA)</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The College of Science Athletic Association (COSAA) at the University of Rizal System (URS) Morong Campus is a student-led organization under the College of Science. COSAA aims to promote physical fitness, sportsmanship, and camaraderie among science students by organizing and facilitating various athletic events and activities. Through its initiatives, COSAA fosters a balanced academic and athletic environment, encouraging students to excel both in their studies and in sports.</p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\COS Math Circle.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>COS Mathematics Circle</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The COS Mathematics Circle is a student organization under the College of Science at the University of Rizal System (URS) Morong Campus. Its primary objectives are to enhance the mathematical abilities of College of Science students and to develop their leadership potential. Through various activities and programs, the organization fosters a deeper understanding and appreciation of mathematics among its members.
+        </p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\BIOSA.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Biology Students Association - URSM</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Biology Students Association – URSM (BIOSA) is a student organization under the College of Science at the University of Rizal System Morong Campus. It serves as a platform for BS Biology students to enhance their academic and professional development through various activities and initiatives. The association aims to foster a deeper understanding of biological sciences, promote research and community engagement, and cultivate leadership skills among its members.
+        </p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\BGP.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Buklurang Gabay Patnubay – Human Services</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Buklurang Gabay Patnubay – Human Services is a student organization under the College of Science at the University of Rizal System Morong Campus. Established to advocate for equal rights, gender equality, and empowerment, the organization focuses on supporting, uplifting, and serving the community. Through various initiatives and programs, it aims to promote social awareness, inclusivity, and active engagement among students.
+        </p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\SMS.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Samahan ng mga Mag-aaral sa Sikolohiya Morong Campus</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Samahan ng mga Mag-aaral sa Sikolohiya – Morong Campus is the official student organization for Psychology majors under the College of Science at the University of Rizal System Morong Campus. Its primary purpose is to promote psychological awareness and foster a deeper understanding of mental health among students and the broader community. The organization engages in various activities, including educational campaigns, workshops, and outreach programs, aiming to create a supportive environment that encourages open discussions about psychological well-being.</p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\Essence.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>The Essence</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Essence is the official student publication of the College of Science at the University of Rizal System (URS) Morong Campus. Its primary purpose is to inform and engage the student body by providing timely updates on college activities, events, and academic news. Through monthly bulletin board issues and other publications, The Essence offers students opportunities to contribute articles, enhancing their skills in writing, editing, and communication. The organization plays a vital role in fostering a well-informed and connected academic community within the College of Science.</p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\STAR GAD.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Students and Advocates Responsive to Gender and Development (STAR GAD)</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Students and Advocates Responsive to Gender and Development (STAR GAD) is a student organization under the College of Science at the University of Rizal System (URS) Morong Campus. Its primary purpose is to promote gender equality, inclusivity, and social awareness within the university community. By organizing educational campaigns, workshops, and outreach programs, STAR GAD aims to foster a supportive environment that empowers students to become advocates for gender-responsive development and social justice.</p>
+    </div>
+</div>
+
+<div class="org-container">
+    <div class="org-image">
+        <img src="D:\HTML\URSM WEBSITE\logos\RSO.png" alt="Organization Logo">
+    </div>
+    <div class="org-info">
+        <h1>Student Research Organization (RSO)</h1>
+        <p style="text-align: justify;">&ensp;&ensp;&ensp;&ensp;The Student Researchers' Organization (SRO) is a student-led organization under the College of Science at the University of Rizal System (URS) Morong Campus. Its primary purpose is to cultivate a strong research culture among students by promoting scientific inquiry, critical thinking, and academic collaboration. SRO provides a platform for students to engage in research activities, develop their research skills, and contribute to the advancement of knowledge within the university community.</p>
+    </div>
+</div>
+
+    <div class="button-container">
+        <a href="COSDepartment.html" class="button1">Go Back</a>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 University of Rizal System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

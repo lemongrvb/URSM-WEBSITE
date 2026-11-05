@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URS | Departments</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f9;
+      color: #333;
+      background-image: url(bg/cit-bg.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+            background: url('images/ursm1.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .lesson-content {
+            margin-top: 10px;
+            padding: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border: 2px solid #004080;
+            border-radius: 15px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    .lesson-content-dept {
+    margin-top: 10px;
+    width: 95%;                
+    padding: 40px 80px;        
+    border: 3px solid #004080; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4); 
+    font-size: 1.4rem;
+    text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+        width: 100%;
+        background:#064b90;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: inset 0 0 60px rgba(30, 60, 180, 0.25),
+                    0 8px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 12px 12px;
+        margin-top: 3px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        margin: 0 0.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        background: #3498db;
+        color: #fff;
+        box-shadow: 0 0 10px rgba(30, 60, 180, 0.5);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+        
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #064b90;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .info-button {
+      display: block;
+      width: 90%;
+      max-width: 500px;
+      padding: 2rem;
+      background: #dce9f9;
+      color: #003366;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .info-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      background-color: #cfe4ff;
+    }
+
+    .content-section {
+        display: none;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        animation: slideUp 0.5s ease;
+    }
+
+    .dean-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 3rem;
+            text-align: justify;
+            margin-left: 60px;
+            margin-right: 60px;
+    }
+        
+    .dean-photo {
+      width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            margin-top: 20px;
+            margin-left: 180px;
+    }
+
+    footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 50px; 
+        }
+
+        .button1 {
+            background-color: lightblue;
+            color: rgb(2, 2, 2);
+            padding: 12px 24px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgb(71, 139, 255);
+            color: #fff;
+        }
+        
+
+    @media (max-width: 600px) {
+      .info-button {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+    }
+
+    .description-section {
+      background: linear-gradient(to right, #ffffff, #f0f8ff);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .description-section::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 200px;
+      height: 200px;
+      background: #cce5ff;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+
+    .description-section::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      width: 250px;
+      height: 250px;
+      background: #99ccff;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .description-section h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .description-section p {
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: justify;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div id="lessons" class="lesson-content">
+            <h1>University of Rizal System - Morong Campus</h1>
+            <p>Nurturing Tomorrow's Noblest</p>
+        </div>
+    </header>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="home.html#about">About Us</a>
+    <a href="administrators.html">The Administrators</a>
+    <a href="org-structure.html">Organizational Structure</a>
+    <a href="departments.html" class="active">Departments</a>
+    <a href="archives.html">Archives</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <main>
+    <section class="description-section">
+      <h2>Dean of College of Industrial Technology</h2>
+      <div class="dean-info">
+        <img src="D:\HTML\URSM WEBSITE\images\Dean\Prof. Frederick R. Feliciano.png" alt="Dean of Industrial Technology" class="dean-photo">
+    </div>
+      <h2>Dr. Rommel R. Castro</h2>
+      <p>
+        &ensp;&ensp;&ensp;&ensp;&ensp;Prof. Frederick R. Feliciano is the Dean of the College of Industrial Technology at the University of Rizal System (URS) Morong Campus. In addition to his role as Dean, he has served as the Head of Admissions at URS Morong.<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;Prof. Feliciano's leadership is instrumental in overseeing the development and implementation of academic programs within the College of Industrial Technology. His dedication to academic excellence and student success contributes significantly to the college's mission of providing quality education and preparing students for careers in industrial technology.    
+      </p>
+    </section>
+  </main>
+
+    <div class="button-container">
+        <a href="CITDepartment.html" class="button1">Go Back</a>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 University of Rizal System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

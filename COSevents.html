@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URS | Departments</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f9;
+      color: #333;
+      background-image: url(bg/quad-bg.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+            background: url('images/ursm1.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .lesson-content {
+            margin-top: 10px;
+            padding: 10px;
+            padding-left: 35px;
+            padding-right: 35px;
+            border: 2px solid #004080;
+            border-radius: 15px;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    .lesson-content-dept {
+    margin-top: 10px;
+    width: 95%;                
+    padding: 40px 80px;        
+    border: 3px solid #004080; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4); 
+    font-size: 1.4rem;
+    text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+        width: 100%;
+        background:#064b90;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: inset 0 0 60px rgba(30, 60, 180, 0.25),
+                    0 8px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 12px 12px;
+        margin-top: 3px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        margin: 0 0.5rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        background: #3498db;
+        color: #fff;
+        box-shadow: 0 0 10px rgba(30, 60, 180, 0.5);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+        
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+        background-color: rgba(255, 255, 255, 0.721);
+        margin: 2rem 0;
+        border-radius: 10px;
+    }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #063a6e;
+        }
+
+        .event-card {
+            background: #f7f9fb;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+            border-radius: 10px;
+        }
+
+        .event-card h3 {
+            color: #143bb9;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-card .date {
+            color: #3d3d3d;
+            font-size: 16px;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-image {
+            width: 60%;
+            height: auto;
+            margin-bottom: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .event-card p{
+            font-size: 18px;
+            color: black;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px; 
+        }
+
+        .button1 {
+            background-color: lightblue;
+            color: rgb(2, 2, 2);
+            padding: 12px 24px;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button1:hover {
+            background-color: rgb(71, 139, 255);
+            color: #fff;
+        }
+
+    @media (max-width: 600px) {
+      .info-button {
+        font-size: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div id="lessons" class="lesson-content">
+            <h1>University of Rizal System - Morong Campus</h1>
+            <p>Nurturing Tomorrow's Noblest</p>
+        </div>
+    </header>
+
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="home.html#about">About Us</a>
+    <a href="administrators.html">The Administrators</a>
+    <a href="org-structure.html">Organizational Structure</a>
+    <a href="departments.html" class="active">Departments</a>
+    <a href="archives.html">Archives</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <section class="section" id="events">
+        <h2>Latest News and Events</h2>
+
+        <div class="event-card">
+            <img src="D:\HTML\URSM WEBSITE\events\Homecoming.jpg" alt="COS Alumni Homecoming" class="event-image">
+            <h3>COS Alumni Homecoming Set for July 2025!</h3>
+            <div class="date">July 19, 2025</div>
+            <p>The University of Rizal System – Morong’s College of Science is thrilled to announce its upcoming Alumni Homecoming titled “The Lab Awaits Your Return!” Reconnect with former classmates and witness how your alma mater has grown.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="D:\HTML\URSM WEBSITE\events\Cosnight.jpg" alt="COS Victory Night" class="event-image">
+            <h3>COS Victory Night 2025: A Celebration of Style and Spirit!</h3>
+            <div class="date">February 27, 2025</div>
+            <p>Join us for the much-awaited COS Victory Night at the URSM Quadrangle. Bring your positive energy and enjoy a night of creativity and fun!</p>
+        </div>
+
+        <div class="event-card">
+            <img src="events/Hsfeud.jpg" alt="HS Feud 2025" class="event-image">
+            <h3>HS Feud 2025: A Game Show Experience for Human Services Students!</h3>
+            <div class="date">February 26, 2025</div>
+            <p>Join us for HS Feud 2025, a lively game show-style event for Human Services students to compete in friendly rounds inspired by Family Feud. Registrations are open until February 24.</p>
+        </div>
+
+        <div class="event-card">
+            <img src="D:\HTML\URSM WEBSITE\events\Infovision.jpg" alt="INFOVISION Competition" class="event-image">
+            <h3>INFOVISION: Infographics Research Competition Now Open!</h3>
+            <div class="date">March 17, 2025</div>
+            <p>Turn complex research into creative visuals in this infographic competition for 4th-year students. Showcase your academic excellence!</p>
+        </div>
+
+        <div class="event-card">
+            <img src="D:\HTML\URSM WEBSITE\events\Bloodtest.jpg" alt="Type Kita Blood Typing Booth" class="event-image">
+            <h3>Type Kita: Blood Typing Booth Returns for COS Week!</h3>
+            <div class="date">February 24-27, 2025</div>
+            <p>Discover your blood type at the Biology Students Association's booth during COS Week. It's a fun and educational experience!</p>
+        </div>
+
+        <div class="event-card">
+            <img src="D:\HTML\URSM WEBSITE\events\Journalism.jpg" alt="COS Week Journalism Competition" class="event-image">
+            <h3>Showcase Your Creativity in the COS Week Journalism Competition!</h3>
+            <div class="date">February 26, 2025</div>
+            <p>Join the COS Week Journalism Competition in categories like Photo Journalism, Illustration, and Poem Writing. Register now!</p>
+        </div>
+    </section>
+</main>
+
+    <div class="button-container">
+        <a href="COSDepartment.html" class="button1">Go Back</a>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 University of Rizal System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
